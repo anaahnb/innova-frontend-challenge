@@ -1,0 +1,13 @@
+<div class="card__list">
+  @for (card of cards; track card.title) {
+    <div class="card__content">
+      <div class="card__title">
+        <img ngSrc={{card.icon}} width="90" height="90" aria-hidden="true">
+        <h2> {{ card.title }} </h2>
+      </div>
+      <div class="card__subtitle">
+        <p> {{ card.subtitle }}</p>
+      </div>
+    </div>
+  }
+</div>
