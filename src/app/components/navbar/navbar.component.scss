@@ -1,0 +1,43 @@
+@import '../../../variaveis.scss';
+
+.navbar__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  align-items: center;
+}
+
+.navbar__logo--items {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 34rem;
+}
+
+.navbar__logo--content {
+  background-color: $blue-700;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.nav__links--content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $cyan-500;
+  height: 100%;
+}
+
+.navbar__links--items {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__links--items a {
+  color: $white;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
