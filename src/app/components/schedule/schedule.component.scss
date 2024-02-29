@@ -2,10 +2,12 @@
 
 .schedule__section {
   background-color: $blue-700;
-  padding: 3.938rem 0;
+  padding: 3.938rem 1rem;
   border: 1px solid white;
   display: flex;
   justify-content: center;
+  border: 1px red solid;
+
 }
 
 .schedule__content {

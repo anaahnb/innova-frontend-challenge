@@ -1,7 +1,7 @@
 @import '../../../variaveis.scss';
 
 .awards__section {
-  padding: 4rem 0;
+  padding: 4rem 1rem;
 }
 
 .awards__items h1 {
@@ -18,4 +18,5 @@
   gap: 4rem;
   justify-content: center;
   margin-top: 4rem;
+  flex-wrap: wrap;
 }

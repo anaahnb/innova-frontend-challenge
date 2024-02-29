@@ -3,6 +3,8 @@
 .awards__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.875rem;
 }
 
 .awards__card {

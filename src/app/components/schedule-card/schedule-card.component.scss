@@ -33,3 +33,9 @@
   color: $white;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 1144px) {
+  .schedule__list {
+    justify-content: center;
+  }
+}
