@@ -1,0 +1,38 @@
+{
+  "schedules":[
+    {
+      "data": "19/4",
+      "description": "Lançamento e palestra"
+    },
+
+    {
+      "data": "De 19/4 a 19/5",
+      "description": "Inscrições"
+    },
+
+    {
+      "data": "7/6",
+      "description": "Pitch Day e seleção das propostas para a segunda etapa"
+    },
+
+    {
+      "data": "12/6",
+      "description": "Divulgação das propostas selecionadas"
+    },
+
+    {
+      "data": "A partir de 14/6",
+      "description": "Mentorias e desenvolvimento das iniciativas"
+    },
+
+    {
+      "data": "28/6",
+      "description": "Visita técnica"
+    },
+
+    {
+      "data": "30/8",
+      "description": "Pitch Day final, divulgação do ranking e evento de premiação"
+    }
+  ]
+}

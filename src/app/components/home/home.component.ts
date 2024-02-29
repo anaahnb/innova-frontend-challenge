@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { ChallengesComponent } from '../challenges/challenges.component';
+import { ScheduleComponent } from '../schedule/schedule.component';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,8 @@ import { ChallengesComponent } from '../challenges/challenges.component';
   imports: [
     HeaderComponent,
     NavbarComponent,
-    ChallengesComponent
+    ChallengesComponent,
+    ScheduleComponent,
   ],
   providers: [],
   templateUrl: './home.component.html',

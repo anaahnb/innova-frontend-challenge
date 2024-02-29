@@ -1,0 +1,8 @@
+<div class="schedule__list">
+  @for (schedule of schedules; track schedule.data) {
+    <div class="schedule__card">
+      <h2>{{ schedule.data }}</h2>
+      <p> {{ schedule.description }} </p>
+    </div>
+  }
+</div>
