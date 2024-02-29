@@ -1,0 +1,14 @@
+@import '../../../variaveis.scss';
+
+.awards__section {
+  padding: 4rem 0;
+}
+
+.awards__items h1 {
+  font-size: 3rem;
+  color: $cyan-500;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}

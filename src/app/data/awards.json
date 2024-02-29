@@ -1,0 +1,21 @@
+{
+  "awards":[
+    {
+      "title": "1º LUGAR",
+      "icon": "./assets/1lugar.svg",
+      "description": "R$ 5.000,00 + troféu"
+    },
+    
+    {
+      "title": "2º LUGAR",
+      "icon": "./assets/2lugar.svg",
+      "description": "R$ 3.000,00 + troféu"
+    },
+
+    {
+      "title": "3º LUGAR",
+      "icon": "./assets/3lugar.svg",
+      "description": "R$ 2.000,00 + troféu"
+    }
+  ]
+}

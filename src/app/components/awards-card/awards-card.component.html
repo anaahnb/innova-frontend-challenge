@@ -1,0 +1,11 @@
+<div class="awards__list">
+  @for (award of awards; track award.title) {
+    <div class="awards__card">
+      <img ngSrc={{award.icon}} width="96" height="120" aria-hidden="true">
+      <div class="awards__title">
+        <h2> {{ award.title }} </h2>
+        <p> {{ award.description }} </p>
+      </div>
+    </div>
+  }
+</div>
