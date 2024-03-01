@@ -6,7 +6,12 @@
         <h2> {{ card.title }} </h2>
       </div>
       <div class="card__subtitle">
-        <p> {{ card.subtitle }}</p>
+        @for (subtitle of card.subtitle; track subtitle.text) {
+          <div class="card__subtitle-item">
+            <i class="fa fa-arrow-right"></i>          
+            <p>{{ subtitle.text }}</p>
+          </div>
+        }
       </div>
     </div>
   }

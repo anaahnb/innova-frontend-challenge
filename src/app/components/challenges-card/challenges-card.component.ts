@@ -11,6 +11,8 @@ import json from '../../data/challenge.json';
   templateUrl: './challenges-card.component.html',
   styleUrl: './challenges-card.component.scss'
 })
+
 export class ChallengesCardComponent {
   cards: any[] = json.cards;
+
 }
