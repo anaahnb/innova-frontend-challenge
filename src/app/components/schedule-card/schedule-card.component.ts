@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import json from '../../data/schedule.json';
 
 @Component({
-  selector: 'app-schedule-card',
+  selector: 'schedule-card',
   standalone: true,
   imports: [],
   templateUrl: './schedule-card.component.html',

@@ -3,16 +3,16 @@ import { Component } from '@angular/core';
 import json from '../../data/challenge.json';
 
 @Component({
-  selector: 'app-challenges-card',
+  selector: 'challenge-card',
   standalone: true,
   imports: [
     NgOptimizedImage,
   ],
-  templateUrl: './challenges-card.component.html',
-  styleUrl: './challenges-card.component.scss'
+  templateUrl: './challenge-card.component.html',
+  styleUrl: './challenge-card.component.scss'
 })
 
-export class ChallengesCardComponent {
+export class ChallengeCardComponent {
   cards: any[] = json.cards;
 
 }

@@ -4,3 +4,76 @@
 * {
   font-family: $font-primary;
 }
+
+.challenge__section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+  width: 100%;
+
+  div {
+    max-width: 70rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: $blue-700;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  p {
+   font-size: 1rem;
+   color: $blue-900;
+  }
+
+  span {
+    color: $cyan-500;
+    font-weight: 600;
+  }
+}
+
+.schedule__section {
+  background-color: $blue-700;
+  padding: 3.938rem 1rem;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+
+  div {
+    max-width: 70rem; 
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: $cyan-500;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.awards__section {
+  padding: 4rem 1rem;
+
+  h1 {
+    font-size: 3rem;
+    color: $cyan-500;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .awards__button {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+}
+

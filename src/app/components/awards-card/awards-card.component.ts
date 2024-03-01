@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import json from '../../data/awards.json';
 
 @Component({
-  selector: 'app-awards-card',
+  selector: 'awards-card',
   standalone: true,
   imports: [
     NgOptimizedImage
