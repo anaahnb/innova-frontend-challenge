@@ -13,7 +13,5 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  button_tertiary = {
-    styles: { backgroundColor: '#FFFF', color: '#003262', padding: '1rem 2rem', fontSize: '1.25rem' }
-  };
+
 }

@@ -1,0 +1,35 @@
+@import '../../../variaveis.scss';
+
+.form__content {
+  max-width: 39.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem auto;
+
+  .form__input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  span {
+    color: $red-400;
+    font-size: .9375rem;
+    font-weight: 300;
+  }
+
+  input {
+    border: 1px solid $gray-200;
+    width: 18.5625rem;
+    height: 3rem;
+    color: $gray-300;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+  }
+
+  ::placeholder {
+    color: $gray-200;
+  }
+}

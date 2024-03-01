@@ -1,0 +1,102 @@
+<form class="form__content" [formGroup]="applicationForm">
+  <div class="form__input">
+    <input type="text" placeholder="Nome" formControlName="nome" aria-label="Insira o seu nome">
+    @if (applicationForm.get('nome')?.invalid && applicationForm.get('nome')?.touched) {
+      <span>
+        Por favor, digite o seu nome.
+      </span>
+    }
+  </div>
+
+  <div class="form__input">
+    <input type="text" placeholder="Sobrenome" formControlName="sobrenome" aria-label="Insira o seu sobrenome">
+    @if (applicationForm.get('sobrenome')?.invalid && applicationForm.get('sobrenome')?.touched) {
+      <span>
+        Por favor, digite o seu sobrenome.
+      </span>
+    }
+  </div>
+
+  <div class="form__input">
+    <input type="text" placeholder="Email" formControlName="email" aria-label="Insira o seu email">
+    <span>
+      @if (applicationForm.get('email')?.invalid && applicationForm.get('email')?.touched) {
+        Por favor, digite o seu email.
+      } @else if (applicationForm.get('email')?.errors?.['email']) {
+        Por favor, digite um email válido
+      }
+    </span>
+  </div>
+
+  <div class="form__input">
+    <input type="text" placeholder="Telefone" minlength="11" maxlength="11" formControlName="telefone" aria-label="Insira o seu telefone">
+    <span>
+      @if(applicationForm.get('telefone')?.invalid && applicationForm.get('telefone')?.touched) {
+        Por favor, digite o seu telefone.
+      }
+      @else if (applicationForm.get('telefone')?.errors?.['minlength'] || applicationForm.get('telefone')?.errors?.['maxlength']) {
+        Por favor, digite um telefone válido. <br>
+        Por exemplo, 98981234567.
+      }
+      @else if (applicationForm.get('telefone')?.errors?.['pattern']) {
+        Por favor, digite apenas números.
+      }
+    </span>
+  </div>
+
+  <div class="form__input">
+    <input type="number" placeholder="CEP" formControlName="cep" aria-label="Insira o seu Código de Endereçamento Postal">
+    @if (applicationForm.get('cep')?.invalid && applicationForm.get('cep')?.touched) {
+      <span>
+        Por favor, digite o seu CEP.
+      </span>
+    }
+  </div>
+
+  <div class="form__input">
+    <input type="text" placeholder="Endereço" formControlName="endereco" aria-label="Insira o seu endereço">
+    @if (applicationForm.get('endereco')?.invalid && applicationForm.get('endereco')?.touched) {
+      <span>
+        Por favor, digite o seu endereço.
+      </span>
+    }
+  </div>
+
+  <div class="form__input">
+    <input type="text" placeholder="Bairro" formControlName="bairro" aria-label="Insira o seu bairro">
+    @if (applicationForm.get('bairro')?.invalid && applicationForm.get('bairro')?.touched) {
+      <span>
+        Por favor, digite o seu bairro.
+      </span>
+    }
+  </div>
+
+  <div class="form__input">
+    <input type="text" placeholder="Complemento" formControlName="complemento" aria-label="Insira o seu complemento">
+    @if (applicationForm.get('complemento')?.invalid && applicationForm.get('complemento')?.touched) {
+      <span>
+        Por favor, digite o seu complemento.
+      </span>
+    }
+  </div>
+
+  <div class="form__input">
+    <input type="text" placeholder="Cidade" formControlName="cidade" aria-label="Insira o seu cidade">
+    @if (applicationForm.get('cidade')?.invalid && applicationForm.get('cidade')?.touched) {
+      <span>
+        Por favor, digite o seu cidade.
+      </span>
+    }
+  </div>
+
+  <div class="form__input">
+    <input type="text" placeholder="Estado" formControlName="estado" aria-label="Insira o seu estado">
+    @if (applicationForm.get('estado')?.invalid && applicationForm.get('estado')?.touched) {
+      <span>
+        Por favor, digite o seu estado.
+      </span>
+    }
+  </div>
+
+  <app-button btn-text="Enviar" variant="secondary" (submit)="onSubmit()"></app-button>
+</form>
