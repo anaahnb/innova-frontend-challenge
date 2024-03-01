@@ -1,0 +1,45 @@
+@import '../../../variaveis.scss';
+
+.footer__content {
+  background-color: $blue-700;
+}
+
+.footer__items {
+  padding: 0 25.3125rem;
+}
+
+h3 {
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 1.125rem;
+  fill: white;
+}
+
+.footer__contact {
+  display: flex;
+  border-bottom: 1px $blue-200 solid ;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.footer__copyright {
+  display: flex;
+  max-width: 69.375rem;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+span {
+  opacity: 0.5;
+}
+
+
+

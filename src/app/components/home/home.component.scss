@@ -43,7 +43,7 @@
   justify-content: center;
 
   div {
-    max-width: 70rem; 
+    max-width: 70rem;
   }
 
   h1 {
@@ -67,7 +67,7 @@
     text-align: center;
     margin-bottom: 2rem;
   }
-  
+
   .awards__button {
     display: flex;
     gap: 4rem;
@@ -78,23 +78,14 @@
 }
 
 .application__section {
+  padding: 3.75rem 0 5.5rem 0;
+
   h1 {
     font-size: 3rem;
     color: $blue-700;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
-    margin: 3.75rem 0 1.5rem 0;
+    margin-bottom: 1.5rem;
   }
-}
-
-.form__content {
-  max-width: 39.125rem;
-  margin: 1.5rem auto;
-}
-
-.form__items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
 }

@@ -6,6 +6,7 @@ import { ScheduleCardComponent } from '../schedule-card/schedule-card.component'
 import { ButtonComponent } from '../button/button.component';
 import { AwardsCardComponent } from '../awards-card/awards-card.component';
 import { ApplicationFormComponent } from '../application-form/application-form.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,7 @@ import { ApplicationFormComponent } from '../application-form/application-form.c
     AwardsCardComponent,
     ApplicationFormComponent,
     ButtonComponent,
+    FooterComponent
   ],
   providers: [],
   templateUrl: './home.component.html',
