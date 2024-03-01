@@ -1,7 +1,34 @@
 @import '../../../variaveis.scss';
 
-button {
+.btn {
   text-transform: uppercase;
   font-weight: 600;
   border: 0;
+
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+  }
+
+  &.primary {
+    background-color: $blue-700;
+    color: white;
+    padding: 1.25rem 3rem;
+    font-size: 1.5rem;
+  }
+
+  &.secondary {
+    background-color: $cyan-500;
+    color: white;
+    padding: 1.1875rem 7.0625rem 1.0625rem 6.9rem;
+    font-size: 1.25rem;
+  }
+
+  &.tertiary {
+    background-color: white;
+    color: $blue-700;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+  }
 }

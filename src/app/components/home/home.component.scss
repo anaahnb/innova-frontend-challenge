@@ -61,7 +61,7 @@
 
   h1 {
     font-size: 3rem;
-    color: $cyan-500;
+    color: $blue-700;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
@@ -77,3 +77,24 @@
   }
 }
 
+.application__section {
+  h1 {
+    font-size: 3rem;
+    color: $blue-700;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3.75rem 0 1.5rem 0;
+  }
+}
+
+.form__content {
+  max-width: 39.125rem;
+  margin: 1.5rem auto;
+}
+
+.form__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
