@@ -2,10 +2,14 @@
 
 .footer__content {
   background-color: $blue-700;
+  border: 5px red solid;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .footer__items {
-  padding: 0 25.3125rem;
+  width: 69.375rem;
 }
 
 h3 {
@@ -22,19 +26,22 @@ h3 {
 
 .footer__contact {
   display: flex;
-  border-bottom: 1px $blue-200 solid ;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  border-bottom: 1px $blue-200 solid ;
   padding: 1.5rem 0;
 }
 
 .footer__copyright {
   display: flex;
-  max-width: 69.375rem;
-  justify-content: space-between;
   padding: 1.5rem 0;
   color: white;
   font-size: 0.875rem;
   font-weight: 500;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 span {
