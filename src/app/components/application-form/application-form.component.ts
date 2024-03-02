@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ApplicationService } from '../../services/application.service';
 
 @Component({
   selector: 'application-form',
@@ -9,7 +10,10 @@ import { CommonModule } from '@angular/common';
   imports: [
     ButtonComponent,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+  ],
+  providers: [
+    ApplicationService
   ],
   templateUrl: './application-form.component.html',
   styleUrl: './application-form.component.scss'
@@ -17,7 +21,7 @@ import { CommonModule } from '@angular/common';
 export class ApplicationFormComponent {
   applicationForm!: FormGroup;
 
-  constructor() {
+  constructor(private service: ApplicationService) {
     this.applicationForm = new FormGroup({
       nome: new FormControl('', [Validators.required]),
       sobrenome: new FormControl('', Validators.required),
@@ -46,5 +50,24 @@ export class ApplicationFormComponent {
   onSubmit() {
     console.log(this.applicationForm.value);
   }
+
+  buscarEndereco(cep: string) {
+    if (!cep) {
+      console.log('CEP não informado');
+      return;
+   }
+    this.service.consultaCEP(cep).subscribe((data: any) => {
+      if (data.erro) {
+        console.log('CEP não encontrado');
+        return;
+      }
+      this.applicationForm.patchValue({
+        endereco: data.logradouro,
+        bairro: data.bairro,
+        cidade: data.localidade,
+        estado: data.uf
+      });
+    });
+ }
 
 }

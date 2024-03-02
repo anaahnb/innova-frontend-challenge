@@ -45,30 +45,21 @@
   </div>
 
   <div class="form__input">
-    <input type="number" placeholder="CEP" formControlName="cep" aria-label="Insira o seu Código de Endereçamento Postal">
-    @if (applicationForm.get('cep')?.invalid && applicationForm.get('cep')?.touched) {
+    <input type="text" placeholder="CEP" formControlName="cep" aria-label="Insira o seu Código de Endereçamento Postal" (change)="buscarEndereco(applicationForm.get('cep')?.value)">
       <span>
-        Por favor, digite o seu CEP.
+        @if (applicationForm.get('cep')?.errors?.['invalid']) {
+          CEP não encontrado ou inválido. <br>
+          Por favor, tente novamente
+        }
       </span>
-    }
   </div>
 
   <div class="form__input">
-    <input type="text" placeholder="Endereço" formControlName="endereco" aria-label="Insira o seu endereço">
-    @if (applicationForm.get('endereco')?.invalid && applicationForm.get('endereco')?.touched) {
-      <span>
-        Por favor, digite o seu endereço.
-      </span>
-    }
+    <input type="text" placeholder="Endereço" formControlName="endereco" aria-label="Insira o seu endereço" readonly>
   </div>
 
   <div class="form__input">
-    <input type="text" placeholder="Bairro" formControlName="bairro" aria-label="Insira o seu bairro">
-    @if (applicationForm.get('bairro')?.invalid && applicationForm.get('bairro')?.touched) {
-      <span>
-        Por favor, digite o seu bairro.
-      </span>
-    }
+    <input type="text" placeholder="Bairro" formControlName="bairro" aria-label="Insira o seu bairro" readonly>
   </div>
 
   <div class="form__input">
@@ -81,21 +72,11 @@
   </div>
 
   <div class="form__input">
-    <input type="text" placeholder="Cidade" formControlName="cidade" aria-label="Insira o seu cidade">
-    @if (applicationForm.get('cidade')?.invalid && applicationForm.get('cidade')?.touched) {
-      <span>
-        Por favor, digite o seu cidade.
-      </span>
-    }
+    <input type="text" placeholder="Cidade" formControlName="cidade" aria-label="Insira o seu cidade" readonly>
   </div>
 
   <div class="form__input">
-    <input type="text" placeholder="Estado" formControlName="estado" aria-label="Insira o seu estado">
-    @if (applicationForm.get('estado')?.invalid && applicationForm.get('estado')?.touched) {
-      <span>
-        Por favor, digite o seu estado.
-      </span>
-    }
+    <input type="text" placeholder="Estado" formControlName="estado" aria-label="Insira o seu estado" readonly>
   </div>
 
   <app-button btn-text="Enviar" variant="secondary" (submit)="onSubmit()"></app-button>
