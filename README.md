@@ -1,27 +1,37 @@
 # Innova
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+Landing page desenvolvida para o **teste técnico de front-end** da empresa [Innova - All the brand](https://aatb.com.br/) sobre a Holambra Cooperativa, uma empresa do setor agroindustrial.
 
-## Development server
+Você pode acessar o protótipo da intefarce e também sua identidade visual em [AdobeXS](https://xd.adobe.com/view/1cf204a5-a446-4ac5-8e6d-690925097289-49a1/).
+Esse projeto project foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 17.2.1.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instruções
 
-## Code scaffolding
+Após clonar o projeto, instale as dependências do projeto com `$ npm install`.
+Execute o `ng serve` para obter um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. A aplicação será recarregado automaticamente se você alterar algum dos arquivos de origem.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Execução do teste técnico
 
-## Build
+Durante o desenvolvimento deste projeto, foram adotadas diversas boas práticas visando a qualidade, manutenibilidade e performance do código. Algumas das principais práticas incluem:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Utilização da metodologia BEM (Block, Element, Modifier) para organizar e estruturar o CSS, facilitando a manutenção e escalabilidade do código.
+- Adoção do pré-processador Sass para escrever estilos de forma mais eficiente e modular.
+- Criação de componentes com variantes de estilo, tornando o código mais flexível e reutilizável.
+- Implementação de componentes dinâmicos com base em dados fornecidos por um arquivo JSON, permitindo fácil atualização e personalização do conteúdo.
+- Atendimento aos princípios de responsividade, garantindo uma experiência consistente em diferentes dispositivos e tamanhos de tela.
+- Validações condicionais com mensagens de erro nos campos do formulário utilizando Expressões Regulares (REGEX) e Validators do Angular.
 
-## Running unit tests
+### Otimização do projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O desempenho e a qualidade deste projeto foram avaliados usando a ferramenta [Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=pt-BR). Abaixo estão os resultados obtidos:
 
-## Running end-to-end tests
+> **Performance**: 100/100
+> **Acessibilidade**: 90/100
+> **Melhores Práticas**: 100/100
+> **SEO**: 91/100
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para alcançar esses resultados, foram implementadas as seguintes práticas:
 
-## Further help
+**Acessibilidade**: Utilização adequada de atributos HTML para estruturar e descrever o conteúdo de forma clara e informativa.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Performance e SEO**: A otimização da performance e SEO do site foi uma prioridade durante o desenvolvimento. Foram implementadas meta tags, robot.txt e sitemap para melhorar a indexação pelos motores de busca. Além disso, foram adotadas práticas como o carregamento progressivo de fontes e o lazyloading de imagens para reduzir o tempo de carregamento da página e melhorar a experiência do usuário.
