@@ -1,10 +1,6 @@
 @import '../../../styles.scss';
 @import '../../../variaveis.scss';
 
-* {
-  font-family: $font-primary;
-}
-
 .challenge__section {
   display: flex;
   justify-content: center;
@@ -13,25 +9,25 @@
 
   div {
     max-width: 70rem;
-  }
 
-  h1 {
-    font-size: 3rem;
-    color: $blue-700;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+    h1 {
+      font-size: 3rem;
+      color: $blue-700;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
 
-  p {
-   font-size: 1rem;
-   color: $blue-900;
-  }
+    p {
+      font-size: 1rem;
+      color: $blue-900;
 
-  span {
-    color: $cyan-500;
-    font-weight: 600;
+      span {
+        color: $cyan-500;
+        font-weight: 600;
+      }
+    }
   }
 }
 
@@ -43,15 +39,15 @@
 
   div {
     max-width: 70rem;
-  }
 
-  h1 {
-    font-size: 3rem;
-    color: $cyan-500;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 2rem;
+    h1 {
+      font-size: 3rem;
+      color: $cyan-500;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -61,7 +57,7 @@
   h1 {
     font-size: 3rem;
     color: $blue-700;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 2rem;
@@ -82,7 +78,7 @@
   h1 {
     font-size: 3rem;
     color: $blue-700;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1.5rem;

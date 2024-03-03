@@ -4,38 +4,36 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.875rem;
-}
 
-.schedule__card {
-  width: 15.9375rem;
-  min-height: 10.125rem;
-  border: 2px solid $cyan-500;
-  padding: 2rem;
-}
+  .schedule__card {
+    width: 15.9375rem;
+    min-height: 10.125rem;
+    border: 2px solid $cyan-500;
+    padding: 2rem;
 
-.schedule__card h2 {
-  font-size: 1.5rem;
-  color: $white;
-  font-weight: 800;
-  text-align: left;
-}
+    h2 {
+      font-size: 1.5rem;
+      color: $white;
+      font-weight: 700;
+      text-align: left;
 
-.schedule__card h2:after {
-  content: '';
-  width: 2rem;
-  height: 0.125rem;
-  background-color: $cyan-500;
-  margin: 0.5rem 0;
-  display: block;
-}
+      &:after {
+        content: '';
+        width: 2rem;
+        height: 0.125rem;
+        background-color: $cyan-500;
+        margin: 0.5rem 0;
+        display: block;
+      }
+    }
 
-.schedule__card p {
-  color: $white;
-  font-size: 1rem;
-}
+    p {
+      color: $white;
+      font-size: 1rem;
+    }
+  }
 
-@media screen and (max-width: 1144px) {
-  .schedule__list {
+  @media screen and (max-width: 1144px) {
     justify-content: center;
   }
 }

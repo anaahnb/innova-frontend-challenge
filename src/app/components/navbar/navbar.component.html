@@ -1,29 +1,9 @@
-<!-- <nav class="navbar">
-  <div class="navbar__content">
-    <div class="navbar__logo--content">
-      <div class="navbar__logo--items">
-        <img ngSrc="./assets/holambra_cooperativa.svg" width="203" height="70" alt="Logo da Cooperativa Agroindustrial Holambra">
-        <img ngSrc="./assets/telescope_holambra.svg" width="92" height="70" alt="Logo da Cooperativa Agroindustrial Holambra">
-      </div>
-    </div>
-    <div class="nav__links--content">
-      <div class="navbar__links--items">
-        <a href="">Increva-se</a>
-        <a href="">Desafios</a>
-        <a href="">Cronograma</a>
-        <a href="">Premiação</a>
-        <a href="">Regulamento</a>
-      </div>
-    </div>
-  </div>
-</nav> -->
-
-<nav id="navbar">
+  <nav id="navbar">
   <ul>
     <li class="logotype">
       <div class="logotype__items">
-        <img ngSrc="./assets/holambra_cooperativa.svg" width="203" height="70" alt="Logo da Cooperativa Agroindustrial Holambra">
-        <img ngSrc="./assets/telescope_holambra.svg" width="92" height="70" alt="Logo da Cooperativa Agroindustrial Holambra">
+        <img ngSrc="./assets/images/holambra_cooperativa.svg" width="203" height="70" alt="Logo da Cooperativa Agroindustrial Holambra">
+        <img ngSrc="./assets/images/telescope_holambra.svg" width="92" height="70" alt="Logo da Cooperativa Agroindustrial Holambra">
       </div>
     </li>
 
@@ -31,10 +11,11 @@
       <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
     </li>
     <li class="menu" [class.is-open]="isMenuOpen">
-      <a href="#" class="menu-item">Home</a>
-      <a href="#" class="menu-item">About</a>
-      <a href="#" class="menu-item">Sign in / Register</a>
-      <a href="#" class="menu-item">Contact</a>
+      <a href="#" class="menu__item">Increva-se</a>
+      <a href="#" class="menu__item">Desafios</a>
+      <a href="#" class="menu__item">Cronograma</a>
+      <a href="#" class="menu__item">Premiação</a>
+      <a href="#" class="menu__item">Regulamento</a>
     </li>
   </ul>
 </nav>

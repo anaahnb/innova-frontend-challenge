@@ -41,7 +41,6 @@ $menuBreakpoint: 1024px;
     cursor: pointer;
     padding: 0 10px;
 
-
     i {
       color: $white;
       line-height: $menuHeight;
@@ -76,7 +75,7 @@ $menuBreakpoint: 1024px;
       }
     }
 
-    .menu-item {
+    .menu__item {
       padding: 0 10px;
       height: $menuHeight;
       line-height: $menuHeight;
