@@ -7,6 +7,7 @@ import { AwardsCardComponent } from '../../components/awards-card/awards-card.co
 import { ApplicationFormComponent } from '../../components/application-form/application-form.component';
 import { ButtonComponent } from '../../components/button/button.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { ScrollTopComponent } from '../../components/scroll-top/scroll-top.component';
 
 
 @Component({
@@ -20,7 +21,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
     AwardsCardComponent,
     ApplicationFormComponent,
     ButtonComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollTopComponent
   ],
   providers: [],
   templateUrl: './home.component.html',
