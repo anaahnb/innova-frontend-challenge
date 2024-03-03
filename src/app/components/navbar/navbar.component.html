@@ -1,4 +1,4 @@
-<nav class="navbar">
+<!-- <nav class="navbar">
   <div class="navbar__content">
     <div class="navbar__logo--content">
       <div class="navbar__logo--items">
@@ -16,4 +16,25 @@
       </div>
     </div>
   </div>
+</nav> -->
+
+<nav id="navbar">
+  <ul>
+    <li class="logotype">
+      <div class="logotype__items">
+        <img ngSrc="./assets/holambra_cooperativa.svg" width="203" height="70" alt="Logo da Cooperativa Agroindustrial Holambra">
+        <img ngSrc="./assets/telescope_holambra.svg" width="92" height="70" alt="Logo da Cooperativa Agroindustrial Holambra">
+      </div>
+    </li>
+
+    <li class="burger" (click)="toggleMenu()">
+      <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+    </li>
+    <li class="menu" [class.is-open]="isMenuOpen">
+      <a href="#" class="menu-item">Home</a>
+      <a href="#" class="menu-item">About</a>
+      <a href="#" class="menu-item">Sign in / Register</a>
+      <a href="#" class="menu-item">Contact</a>
+    </li>
+  </ul>
 </nav>

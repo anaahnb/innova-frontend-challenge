@@ -1,43 +1,91 @@
 @import '../../../variaveis.scss';
 
-.navbar__content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  align-items: center;
-}
+$menuHeight: 60px;
+$menuBreakpoint: 1024px;
 
-.navbar__logo--items {
-  display: flex;
-  gap: 2.5rem;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%;
-  width: 34rem;
-}
+#navbar  {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $cyan-500;
 
-.navbar__logo--content {
-  background-color: $blue-700;
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
+    @media (max-width: $menuBreakpoint) {
+      background-color: $blue-700;
+    }
 
-.nav__links--content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $cyan-500;
-  height: 100%;
-}
+  }
 
-.navbar__links--items {
-  display: flex;
-  gap: 1.5rem;
-}
+  .logotype {
+    width: 100%;
+    background: $blue-700;
+    display: flex;
+    justify-content: center;
 
-.navbar__links--items a {
-  color: $white;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  font-weight: 600;
+    .logotype__items {
+      width: 34rem;
+
+      @media (max-width: 1095px) {
+        width: auto;
+      }
+
+      img  {
+        margin-right: 1.5rem;
+      }
+
+    }
+  }
+
+  .burger {
+    display: none;
+    cursor: pointer;
+    padding: 0 10px;
+
+
+    i {
+      color: $white;
+      line-height: $menuHeight;
+    }
+
+    @media (max-width: $menuBreakpoint) {
+      display: block;
+    }
+  }
+
+  .menu {
+    width: 100%;
+    background: $cyan-500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $menuBreakpoint) {
+      display: none;
+
+      &.is-open {
+        display: block;
+        position: absolute;
+        top: #{$menuHeight + 14};
+        background: #fff;
+        width: 100%;
+
+        .menu-item {
+          color: $blue-700;
+          border-bottom: 1px solid #cccccc;
+        }
+      }
+    }
+
+    .menu-item {
+      padding: 0 10px;
+      height: $menuHeight;
+      line-height: $menuHeight;
+      text-decoration: none;
+      display: block;
+      text-transform: uppercase;
+      font-size: .875rem;
+      font-weight: 600;
+      color: $white;
+    }
+  }
 }

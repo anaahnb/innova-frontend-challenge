@@ -11,5 +11,9 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  isMenuOpen = false;
 
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }
