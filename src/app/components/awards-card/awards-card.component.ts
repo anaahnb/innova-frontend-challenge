@@ -1,7 +1,7 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 
-import json from '../../data/awards.json';
+import json from '../../../assets/data/awards.json';
 
 @Component({
   selector: 'awards-card',

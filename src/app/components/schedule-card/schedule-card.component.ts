@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import json from '../../data/schedule.json';
+import json from '../../../assets/data/schedule.json';
 
 @Component({
   selector: 'schedule-card',

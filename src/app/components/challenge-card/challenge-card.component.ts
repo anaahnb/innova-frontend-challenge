@@ -1,6 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import json from '../../data/challenge.json';
+import json from '../../../assets/data/challenge.json';
 
 @Component({
   selector: 'challenge-card',
