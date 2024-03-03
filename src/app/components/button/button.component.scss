@@ -16,6 +16,12 @@
     color: white;
     padding: 1.25rem 3rem;
     font-size: 1.5rem;
+
+    @media (max-width: 1140px) {
+      padding: 1.25rem;
+      font-size: 1.2rem;
+    }
+
   }
 
   &.secondary {

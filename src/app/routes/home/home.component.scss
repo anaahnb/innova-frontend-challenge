@@ -69,6 +69,14 @@
     justify-content: center;
     margin-top: 4rem;
     flex-wrap: wrap;
+
+    @media (max-width: 1140px) {
+      gap: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      gap: 1rem;
+    }
   }
 }
 

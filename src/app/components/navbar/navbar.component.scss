@@ -24,6 +24,7 @@ $menuBreakpoint: 1024px;
 
     .logotype__items {
       width: 34rem;
+      margin-top: 1rem;
 
       @media (max-width: 1095px) {
         width: auto;
@@ -64,11 +65,11 @@ $menuBreakpoint: 1024px;
       &.is-open {
         display: block;
         position: absolute;
-        top: #{$menuHeight + 14};
+        top: #{$menuHeight + 30};
         background: #fff;
         width: 100%;
 
-        .menu-item {
+        .menu__item {
           color: $blue-700;
           border-bottom: 1px solid #cccccc;
         }
