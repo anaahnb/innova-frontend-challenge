@@ -3,7 +3,7 @@
 Landing page desenvolvida para o **teste técnico de front-end** da empresa [Innova - All the brand](https://aatb.com.br/) sobre a Holambra Cooperativa, uma empresa do setor agroindustrial.
 
 Você pode acessar o protótipo da intefarce e também sua identidade visual em [AdobeXS](https://xd.adobe.com/view/1cf204a5-a446-4ac5-8e6d-690925097289-49a1/).
-Esse projeto project foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 17.2.1.
+Esse projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 17.2.1.
 
 ## Instruções
 
